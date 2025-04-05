@@ -61,4 +61,4 @@ int main() {
     scanf("%d", &pontosTuristicos2);
 
     return 0;
-}
+}0
