@@ -15,6 +15,7 @@ int main() {
     float pibPerCapita1, pibPerCapita2;
     float superPoder1, superPoder2;
     float superpoder;
+    unsigned int resultadoA, resultadoB;
 
     // Entrada de dados da primeira cidade
 
@@ -81,6 +82,20 @@ int main() {
 
     superpoder = (float)(populacao2 + area2 + pib2 + pibPerCapita2 + area1/populacao2);
     printf("superpoder é: %f\n", superpoder);
+
+    resultadoA = populacao1 > populacao2;
+resultadoB = populacao2 > populacao1;
+resultadoA = area1 > area2;
+resultadoB = area2 > area1;
+resultadoA = pib1 > pib2;
+resultadoB = pib2 > pib1;
+
+printf("populacao %d \n",resultadoA);
+printf("populacao %d \n",resultadoB);
+printf("area %d \n", resultadoA);
+printf("area %d \n", resultadoB);
+printf("pib %f", resultadoA);
+printf("pib %f", resultadoB);
 
     return 0;
 }
