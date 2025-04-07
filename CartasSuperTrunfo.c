@@ -14,6 +14,7 @@ int main() {
     float densidadePopulacional1, densidadePopulacional2;
     float pibPerCapita1, pibPerCapita2;
     float superPoder1, superPoder2;
+    float superpoder;
 
     // Entrada de dados da primeira cidade
 
@@ -45,6 +46,10 @@ int main() {
     pibPerCapita1 = (float)(pib1/populacao1);
     printf("o pibpercapta1 e:%f\n", pibPerCapita1);
 
+
+    superpoder = (float)(populacao1 + area1 + pib1 + pibPerCapita1 + area1/populacao1);
+    printf("superpoder é: %f\n", superpoder);
+
          // Entrada de dados da segunda cidade
 
     printf("\n--- Cadastro da Segunda Cidade ---\n");
@@ -73,6 +78,9 @@ int main() {
     printf("a densidadepopulacional2 e:%f", densidadePopulacional2);
 
     pibPerCapita2 = (float)(pib2/populacao2);
+
+    superpoder = (float)(populacao2 + area2 + pib2 + pibPerCapita2 + area1/populacao2);
+    printf("superpoder é: %f\n", superpoder);
 
     return 0;
 }
